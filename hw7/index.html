@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h2>Click to open form</h2>
+    <button id="btn">Click me</button>
+    <div id="modal">
+        <div class="modal__content">
+            <form action="" class="modal__form">
+                <div class="tabs">
+                    <div class="tabs__item ">
+                        <span>Sign Up</span>
+                        <div class="tabs__itemContent" id='signUpContent'>
+                            <div class="heading">Sign Up for Free</div>
+                            <div class="name">
+                                <div class="firstName">
+                                    <input id="firstName" class='firstName__input' type="text" name="firstName"
+                                        required>
+                                    <label for="firstName" class="firstName__label">First Name</label>
+                                </div>
+                                <div class="lastName">
+                                    <input type="text" name="lastName" id='lastName' class='lastName__input' required>
+                                    <label for="lastName" class="lastName__label">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="email">
+                                <input id="userEmail" class='email__input' type="email" name="userEmail" required>
+                                <label for="userEmail" class="email__label">Email</label>
+                            </div>
+                            <div class="password">
+                                <input type="password" name="userPassword" id='userPassword' class='password__input'
+                                    required>
+                                <label for="userPassword" class="password__label">Set A Password</label>
+                            </div>
+                            <button type="submit" class="btnLogIn" id="btnSignUp">GET STARTED</button>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+            <form action="" class="modal__form">
+                <div class="tabs__item ">
+                    <span class="chosen">Log In</span>
+                    <div class="tabs__itemContent show">
+                        <div class="heading">Welcome Back!</div>
+                        <div class="email">
+                            <input id="email" class='email__input' type="email" name="email" required>
+                            <label for="email" class="email__label">Email Address</label>
+                        </div>
+                        <div class="password">
+                            <input type="password" name="password" id='password' class='password__input mb20' required>
+                            <label for="password" class="password__label">Password</label>
+                        </div>
+                        <div class="link"><a href="#">Forgot Password?</a></div>
+                        <button type="submit" class="btnLogIn">Log In</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
