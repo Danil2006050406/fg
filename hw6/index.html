@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>hw6</title>
+	<script type="text/javascript">
+
+		
+		const staffArr = [];
+		const numberStaff = +prompt('Введите количество сотрудников');
+		
+		for(i = 0; i < numberStaff; i++) {
+			let personnelDossier = {};
+			personnelDossier.name = prompt('Введите имя сотрудника.');
+			personnelDossier.sName = prompt('Введите фамилию сотрудника.');
+			personnelDossier.age = +prompt('Введите возраст сотрудника (количество полных лет).');
+			personnelDossier.occupation = prompt('Введите должность сотрудника.');	
+			staffArr.push(personnelDossier);
+			personnelDossier.showInfo = function() {
+			document.write("Имя: " + this.name + '<br/>' + "Фамилия: " + this.sName + '<br/>' + "Возраст: " + this.age + " лет" + '<br/>' + "Должность: " + this.occupation + '<br/>' + "Оклад: " + this.salary + "$" + '<br/><br/>');
+			};
+		}
+		console.log("Размер массива: " + staffArr.length);
+		console.log(staffArr);
+		document.write(staffArr.length + '<br/>');
+
+		
+
+		function salaryAdd() {
+            for (i = 0; i < staffArr.length; i++) {
+                if (staffArr[i]['occupation'] === 'director') {
+                    staffArr[i]['salary'] = 3000;
+                } else if (staffArr[i]['occupation'] === 'manager') {
+                    staffArr[i]['salary'] = 1500;
+                } else if (staffArr[i]['occupation'] === 'programmer') {
+                    staffArr[i]['salary'] = 2000;
+                } else {
+                	staffArr[i]['salary'] = 1000;
+                }
+            }
+        }
+
+        for (i = 0; i < staffArr.length; i++) {
+            salaryAdd();
+        }
+
+        for (i = 0; i < staffArr.length; i++) {
+            staffArr[i].showInfo();
+        }
+
+    </script>
+</head>
+<body>
+	
+</body>
+</html>
