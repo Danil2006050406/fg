@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>hw3</title>
+	<script type="text/javascript">
+
+		
+		for (var i = 0; i < 10; i++) {
+            for (var j = 0; j <= i; j++) {
+                document.write("* ");
+            }
+            document.write("<br/>");
+        }
+
+        document.write("<hr />");
+
+        for (var i = 10; i > 0; i--) {
+            for (var j = 1; j <= i; j++) {
+                document.write("* ");
+            }
+            document.write("<br/>");
+        }
+        document.write("<br/>");
+        document.write("<hr />");
+        document.write("<hr />");
+        document.write("<br/>");
+
+       
+        let numA = 5;
+        let numB = 20;
+        let sum = 0;
+        let oddValues = 0;
+       
+        for (i = numA; i <= numB; i++) {
+            sum += i;
+            oddValues = i;
+            if (oddValues % 2 == 1) {
+            	document.write("oddValues = " + oddValues);
+            	document.write("<br/>");
+            }
+        }
+        document.write("sum = " + sum);
+
+        document.write("<br/>");
+        document.write("<hr />");
+        document.write("<hr />");
+        document.write("<br/>");
+
+        
+        var n = +prompt('Введите количество элементов.');
+        document.write("n = " + n + "<br/>");
+        
+        var fib = Array(n);
+		fib[0] = 1;
+		fib[1] = 1;
+        for (i = 2; i < n; i++) {
+        	fib[i] = fib[i-1] + fib[i-2];
+		}
+		document.write("Ряд Фибоначи из " + n + " элементов:" + "<br/>");
+		document.write(fib);
+
+		document.write("<br/>");
+        document.write("<hr />");
+        document.write("<hr />");
+        document.write("<br/>");
+
+    </script>
+</head>
+<body>
+	
+</body>
+</html>
