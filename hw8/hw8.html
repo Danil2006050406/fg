@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JSDZ7_8</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<form action="" class="form">
+
+		<div class="form__header">
+			<h3>ФОРМА ОБРАТНОЙ СВЯЗИ</h3>
+		</div>
+
+		<div class="body_form">
+			<div class="form__item">
+    			<div>ФИО: </div>
+    			<input type="text" class="fio">
+    		</div>
+    	</div>
+
+    	<div class="body_form">	
+    		<div class="form__item">
+    			<div>Адресс: </div>
+    			<input type="text" class="adres">
+    		</div>		
+    	</div>	
+
+    	<div class="body_form">	
+    		<div class="form__item">		
+    			<div>Почта: </div>
+    			<input type="text" class="posts">	
+    		</div>
+    	</div>	
+
+    	<div class="switcher">
+    		<div class="body_form">	
+    			<div class="form__item">
+        			<div>Имущество</div>
+        			<input type="radio" name="prop" checked="checked" id="own">
+        		</div>
+    		</div>    
+        	<div class="body_form">
+        		<div class="form__item">	
+        			<div>Деньги</div>
+        			<input type="radio" name="prop" id="noOwn">	
+        		</div>
+        	</div>	
+    	</div>
+
+    	<div class="type hidden">
+    		<div class="body_form">
+    			<div class="form__item">
+        			<div>Физическое лицо</div>
+        			<input type="radio" name="type"  id="person">	
+        		</div>
+        	</div>	
+        	<div class="body_form">	
+        		<div class="form__item">	
+        			<div>Юридическое лицо</div>
+        			<input type="radio" name="type" id="company">	
+        		</div>
+        	</div>	
+    	</div>
+
+    	<div class="body_form">
+    		<div class="form__item">
+    			<div>Сумма: </div>
+    			<input id="sum" type="text">	
+    		</div>
+    	</div>	
+
+    	<div class="body_form">	
+    		<div class="form__item1">		
+    			<div>Комиссия:&nbsp;</div>
+    			<div id="tax" type="text"></div>
+    			<div>грн.</div>
+			</div>
+		</div>	
+
+    	<button class="banner__btn">
+    		<a href="billV2.html" id="getBill">Создать квитанцию</a>
+    	</button>
+    			
+		<div id="block"></div>
+
+	</form>
+	<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
