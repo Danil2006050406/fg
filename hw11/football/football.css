@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.field{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url(img/football.jpg);
+    background-position: center center no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.goal{
+    height: 230px;
+    width: 82px;
+    border: 2px solid red;
+    margin-bottom: 31px;
+}
+img{
+    position: absolute;
+    cursor: grab;
+    top: 291px;
+    left: 662px;
+}
+.counter{
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.678);
+}
+.counter span{
+    display: block;
+    color: white;
+    font-size: 40px;
+}

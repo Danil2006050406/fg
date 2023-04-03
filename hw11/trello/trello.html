@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="trelloStyle.css">
+	<title>Trello</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="trello__app">
+			<div class="trello__header">
+				<input type="text" id="inp" placeholder="Task">
+				<input type="text" id="inpExecutor" placeholder="Executor">
+				<button id="btn">Add Task</button>
+				
+			</div>
+			<div class="trello__body">
+				<div class="trello__appItem" id="sprint">
+					<div class="trello__appItemHeader">
+						<span>Sprint</span>
+					</div>
+				</div>
+				<div class="trello__appItem" id="toDo">
+					<div class="trello__appItemHeader">
+						<span>To do</span>
+					</div>
+				</div>
+				<div class="trello__appItem" id="review">
+					<div class="trello__appItemHeader">
+						<span>Review</span>
+					</div>
+				</div>
+				<div class="trello__appItem" id="done">
+					<div class="trello__appItemHeader">
+						<span>Done</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="trelloScript.js"></script>
+</body>
+</html>

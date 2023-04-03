@@ -1,0 +1,6 @@
+.toolTip{
+    position: absolute;
+    padding: 0 20px;
+    color:rgb(188, 136, 25);
+    pointer-events: none; 
+ }

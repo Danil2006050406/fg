@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		div{
+			border: 1px solid black;
+			height: 350px;
+		}
+		img{
+			height: 200px;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div class="dragZone">
+		<img src="https://i.gifer.com/origin/88/889f42c8351eb014d98cb6984510bfb1.gif" alt="Flying bird" draggable="true">
+	</div>
+	<div class="dragZone"></div>
+	<!-- <script>
+		const firstPoligon = document.querySelector('.firstPoligon');
+		const secondPoligon = document.querySelector('.secondPoligon');
+		const img = document.querySelector('img');
+		secondPoligon.addEventListener('dragover', prevent);
+		firstPoligon.addEventListener('dragover', prevent);
+		function prevent(e){
+			e.preventDefault()
+		}
+		secondPoligon.addEventListener('drop', dropElement);
+		firstPoligon.addEventListener('drop', dropElement)
+		function dropElement(e){
+			this.appendChild(img)
+			console.log(e)
+		}
+	</script> -->
+	<script src="dragDrop.js"></script>
+</body>
+</html>
